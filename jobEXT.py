@@ -8,18 +8,21 @@
 	single job or venue, this is the place for that function.
 '''
 
-class Specific:
+General = mod("generalEXT").General
+
+class Specific(General):
 	def __init__(self):
+		General.__init__(self)
 		return
 
 	def Image_order(self, message):
 		
-		vals 		= message.get('vals')
+		vals 					= message.get('vals')
 
 		if vals:
-			op('table1')[1, 2] = "'moviefilein2 moviefilein1'"
+			op('table1')[1, 2] 	= "'moviefilein2 moviefilein1'"
 
 		else:
-			op('table1')[1, 2] = "'moviefilein1 moviefilein2'"
+			op('table1')[1, 2] 	= "'moviefilein1 moviefilein2'"
 
 		return

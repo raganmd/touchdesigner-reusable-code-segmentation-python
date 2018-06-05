@@ -9,9 +9,9 @@
 
 class MessageParser:
 
-
 	def __init__(self, my_op):
 		self.Me 	= my_op
+		print("Parser init")
 		return
 	
 	def Process_message(self, message):
