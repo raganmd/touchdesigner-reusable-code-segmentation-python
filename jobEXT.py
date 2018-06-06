@@ -11,8 +11,9 @@
 General = mod("generalEXT").General
 
 class Specific(General):
-	def __init__(self):
-		General.__init__(self)
+	def __init__(self, my_op):
+		General.__init__(self, my_op)
+		print("Specific init")
 		return
 
 	def Image_order(self, message):
